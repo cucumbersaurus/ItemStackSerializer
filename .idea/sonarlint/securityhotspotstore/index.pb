@@ -21,3 +21,11 @@ Dsrc/main/kotlin/com/cucumbersaurus/serializer/ItemStackSerializer.kt,b\2\b2f7c
 :
 
 check.json,d\c\dc081951ab09ba0cbfc3e03797d0017a9bd19f11
+s
+Csrc/main/kotlin/com/cucumbersaurus/serializer/ItemMetaSerializer.kt,1\6\16e76b5b71753070ffef685471d493aafcd20382
+p
+@src/main/kotlin/com/cucumbersaurus/serializer/ColorSerializer.kt,6\e\6ef6b870e794932da7c9c667ff33bedb1e2f98f6
+t
+Dsrc/main/kotlin/com/cucumbersaurus/serializer/ComponentSerializer.kt,f\c\fcfb704fb96cd82ca5198c1a925bdb4a9a17c7ac
+q
+Asrc/main/kotlin/com/cucumbersaurus/serializer/PotionSerializer.kt,4\c\4cb3fee20e4ca251759633045b6dbe089540c834
