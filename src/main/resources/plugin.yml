@@ -1,0 +1,14 @@
+name: ItemStackSerializer
+version: '${version}'
+main: com.cucumbersaurus.serializer.SerializerPlugin
+api-version: '1.20'
+load: STARTUP
+authors: [cucumbersaurus]
+description: ItemStack serializing library
+website: https://github.com/cucumbersaurus
+
+libraries:
+  - com.soywiz.korlibs.korio:korio-jvm:4.0.10
+
+commands:
+  serialize_test:

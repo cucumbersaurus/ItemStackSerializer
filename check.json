@@ -1,0 +1,89 @@
+[
+  {
+    "amount":1,
+    "meta":{
+      "customModelData":1,
+      "lore":[
+        "TextComponentImpl{content=\"이 막대기는 아주 위대하고\", style=StyleImpl{obfuscated=not_set, bold=not_set, strikethrough=not_set, underlined=not_set, italic=not_set, color=null, clickEvent=null, hoverEvent=null, insertion=null, font=null}, children=[]}",
+        "TextComponentImpl{content=\"전설적인 나무젓가락 입니다\", style=StyleImpl{obfuscated=not_set, bold=not_set, strikethrough=not_set, underlined=not_set, italic=not_set, color=null, clickEvent=null, hoverEvent=null, insertion=null, font=null}, children=[]}"
+      ],
+      "displayName":"TextComponentImpl{content=\"전설의 막대기\", style=StyleImpl{obfuscated=not_set, bold=not_set, strikethrough=not_set, underlined=not_set, italic=not_set, color=NamedTextColor{name=\"light_purple\", value=\"#ff55ff\"}, clickEvent=null, hoverEvent=null, insertion=null, font=null}, children=[]}",
+      "itemFlags":[
+        "HIDE_ENCHANTS"
+      ],
+      "unbreakable":false
+    },
+    "type":"STICK"
+  }
+  ,
+  {
+    "amount":1,
+    "meta":{
+      "customModelData":27,
+      "lore":[
+        "{\"text\":\"이 포션을 마시면\"}",
+        "{\"text\":\"최대 70의 체력를 회복합니다\"}"
+      ],
+      "displayName":"{\"text\":\"체력 회복 포션\"}",
+      "itemFlags":[
+        "HIDE_POTION_EFFECTS"
+      ],
+      "unbreakable":false
+    },
+    "type":"POTION"
+  },
+  {
+    "amount":1,
+    "meta":{
+      "customModelData":24,
+      "lore":[
+        "{\"text\":\"할일 없던 연금술사가 포션을 가마솥에 넣고 오랫동안 졸여서 만든 사탕이다.\"}",
+        "{\"text\":\"15초간 체력 초당 10 회복 (효과 중첩 가능)\"}"
+      ],
+      "displayName":"{\"color\":\"#4682B4\",\"text\":\"고농축 사탕\"}",
+      "itemFlags":[
+        "HIDE_ENCHANTS"
+      ],
+      "unbreakable":false
+    },
+    "type":"BEETROOT"
+  },
+  {
+    "amount": 1,
+    "meta": {
+      "customModelData": 1,
+      "enchants": [
+        {
+          "minecraft:luck_of_the_sea": 1
+        }
+      ],
+      "lore": [
+        "{\"text\":\"이 막대기는 아주 위대하고\"}",
+        "{\"text\":\"전설적인 나무젓가락 입니다\"}"
+      ],
+      "displayName": "{\"color\":\"light_purple\",\"text\":\"전설의 막대기\"}",
+      "itemFlags": [
+        "HIDE_ENCHANTS"
+      ],
+      "unbreakable": false
+    },
+    "type": "STICK"
+  },
+  {
+    "amount": 1,
+    "meta": {
+      "unbreakable": false,
+      "attributeModifiers": [
+        {
+          "minecraft:generic.max_health": {
+            "amount": 1.0,
+            "name": "generic.max_health",
+            "uuid": "2c072744-f73c-4f51-bd74-14c2bfc665e0",
+            "operation": 0
+          }
+        }
+      ]
+    },
+    "type": "COOKED_BEEF"
+  }
+]
