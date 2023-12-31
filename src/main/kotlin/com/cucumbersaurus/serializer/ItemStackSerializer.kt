@@ -30,7 +30,7 @@ object ItemStackSerializer {
         return map.toJson(pretty)
     }
 
-    private fun toMap(item: ItemStack): Map<String, Any>{
+    fun toMap(item: ItemStack): Map<String, Any>{
         val map  = HashMap<String, Any>()
         map["type"] = item.type.name
         map["amount"] = item.amount
@@ -41,7 +41,10 @@ object ItemStackSerializer {
 
     fun fromJson(json: String): ItemStack? {
         val map = json.toMap() ?: return null
+        return fromMap(map)
+    }
 
+    fun fromMap(map: Map<String, Any>): ItemStack{
         val item = ItemStack(Material.getMaterial(map["type"] as String)!!)
         item.amount = map["amount"] as Int
         item.setItemMeta(ItemMetaSerializer.fromMap(map["meta"] as Map<String, Any>, item.itemMeta))
@@ -459,5 +462,8 @@ object ColorSerializer{
 private fun String.toMap(): LinkedHashMap<String, Any>? = Json.parse(this).fastCastTo()
 private fun Map<*, *>.toMap(pretty: Boolean = false): String = Json.stringify(this, pretty)
 
-fun ItemStack.serializeToJson(pretty: Boolean = false   ) = ItemStackSerializer.toJson(this, pretty)
+fun ItemStack.serializeToJson(pretty: Boolean = false) = ItemStackSerializer.toJson(this, pretty)
 fun String.deserializeFromJson() = ItemStackSerializer.fromJson(this)
+
+fun ItemStack.serializeToMap() = ItemStackSerializer.toMap(this)
+fun Map<String, Any>.deserializeFromMap() = ItemStackSerializer.fromMap(this)

@@ -1,6 +1,5 @@
 package com.cucumbersaurus.serializer
 
-import net.md_5.bungee.api.chat.hover.content.Item
 import org.bukkit.Bukkit
 import org.bukkit.command.Command
 import org.bukkit.command.CommandExecutor
@@ -11,7 +10,7 @@ class SerializeTestCommand:CommandExecutor {
     override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>?): Boolean {
         if(args!=null && args.isNotEmpty()){
             val json = args.joinToString(separator = " ")
-            val item = ItemStackSerializer.fromJson(json)!!
+            val item = json.deserializeFromJson()!!
             Bukkit.getOnlinePlayers().forEach {
                 it.inventory.addItem(item)
             }
@@ -23,7 +22,7 @@ class SerializeTestCommand:CommandExecutor {
                 val json = item.serializeToJson()
                 Bukkit.getLogger().info(json)
 
-                val newItem = ItemStackSerializer.fromJson(json)!!
+                val newItem = json.deserializeFromJson()!!
                 sender.inventory.addItem(newItem)
             }
         return true
